@@ -1,5 +1,7 @@
 const DefinationParser = require('./PARSER.js');
 
-const WORDS = ['backdoor', 'tree', 'mobile', 'hung', 'wind'];
+const WORDS = ['backdoor'];
 
-new DefinationParser().fetchDefinationsFromWeb(WORDS);
+const parser = new DefinationParser('test.json');
+
+parser.fetchDefinationsFromWeb(WORDS);
